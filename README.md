@@ -7,7 +7,7 @@ A aplicação utiliza o conteúdo da disciplina de **Cálculo I** como contexto 
 ---
 ![Descrição da imagem](Captura de tela 2026-08-17 202050.png)
 ## 🎯 Desafio proposto
-
+![Descrição da imagem](Captura de tela 2026-08-17 202130.png) 
 O desafio consiste em utilizar uma aula de Cálculo I fornecida pela Cruzeiro do Sul como contexto para desenvolver pelo menos um dos seguintes casos:
 
 1. **Nivelamento** — identificar os pré-requisitos necessários para compreender a aula e verificar se o aluno possui esses conhecimentos.
