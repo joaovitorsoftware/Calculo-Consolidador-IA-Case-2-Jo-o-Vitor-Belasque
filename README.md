@@ -5,7 +5,7 @@ Aplicação de **consolidação de aprendizagem baseada em Inteligência Artific
 A aplicação utiliza o conteúdo da disciplina de **Cálculo I** como contexto para avaliar a compreensão do aluno após uma aula, identificar objetivos de conhecimento dominados ou que necessitam de revisão e gerar recomendações personalizadas de aprendizagem.
 
 ---
-
+![Descrição da imagem](Captura de tela 2026-08-17 202050.png)
 ## 🎯 Desafio proposto
 
 O desafio consiste em utilizar uma aula de Cálculo I fornecida pela Cruzeiro do Sul como contexto para desenvolver pelo menos um dos seguintes casos:
