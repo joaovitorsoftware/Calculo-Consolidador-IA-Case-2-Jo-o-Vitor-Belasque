@@ -1,4 +1,5 @@
 # Consolida Cálculo I — Case Engenharia de IA | Cruzeiro do Sul
+![Descrição da imagem](tela.png) ![Descrição da imagem](final.png)  ![Descrição da imagem](prova.png)  
 
 Aplicação de **consolidação de aprendizagem baseada em Inteligência Artificial Generativa**, desenvolvida como solução para o desafio técnico de Engenharia de IA da Cruzeiro do Sul.
 
