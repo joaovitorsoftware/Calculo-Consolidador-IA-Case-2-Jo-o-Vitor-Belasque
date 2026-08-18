@@ -1,0 +1,26 @@
+Aula de Cálculo I: A Linguagem da Mudança.
+
+O cálculo modela o que muda no tempo ou no espaço. Na engenharia, apoia a
+otimização de estruturas, a previsão do comportamento de circuitos e a análise
+de fluxos.
+
+Pré-requisitos: funções f(x)=y, regras de potência e álgebra, simplificação de
+frações e fatoração, além do comportamento de seno e cosseno.
+
+Limite: descreve o comportamento de uma função quando a entrada se aproxima de
+um valor. Na indeterminação 0/0 ou infinito/infinito, a regra de L'Hôpital
+permite derivar numerador e denominador separadamente.
+
+A derivada representa taxa de variação instantânea e, geometricamente, a
+inclinação da reta tangente. Definição: f'(x) = lim quando delta x tende a zero
+de [f(x + delta x) - f(x)] / delta x.
+
+Regras: derivada de constante é zero; derivada de x^n é n*x^(n-1); derivada de
+e^x é e^x; derivada de seno é cosseno. Na regra da cadeia, se y=f(g(x)), então
+y'=f'(g(x))*g'(x). Exemplo: a derivada de (3x²+1)^5 é
+30x(3x²+1)^4.
+
+Na interpretação física, a derivada da posição é a velocidade e a derivada da
+velocidade é a aceleração. Cálculo II/III, integrais e multivariáveis são
+essenciais para mecânica e eletromagnetismo. Cálculo também apoia sistemas de
+controle, resistência dos materiais, dimensionamento de vigas e cargas.

@@ -1,0 +1,1 @@
+- [IA com material didático](ai-material-fallback.md) — mantenha a chave no servidor e um conjunto local alinhado à aula para resiliência.

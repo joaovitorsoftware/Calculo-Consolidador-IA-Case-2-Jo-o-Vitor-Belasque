@@ -1,0 +1,39 @@
+kind = "web"
+previewPath = "/"
+title = "Consolida Cálculo I"
+description = "Aplicação de consolidação de aprendizagem para estudantes da Cruzeiro do Sul Virtual, com perguntas guiadas por IA, diagnóstico de objetivos de conhecimento e recomendações de revisão baseadas na aula de Cálculo I."
+version = "1.0.0"
+id = "artifacts/case-cruzeiro-do-sul"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22740
+
+[services.development]
+run = "pnpm --filter @workspace/case-cruzeiro-do-sul run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/case-cruzeiro-do-sul", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/case-cruzeiro-do-sul/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22740"
+BASE_PATH = "/"
+
+[[services]]
+name = "backend"
+paths = [ "/case-cruzeiro-do-sul-api" ]
+localPort = 22741
+
+[services.development]
+run = "PORT=22741 BASE_PATH=/case-cruzeiro-do-sul-api python backend/main.py"
+
+[services.production]
+serve = "PORT=22741 BASE_PATH=/case-cruzeiro-do-sul-api python backend/main.py"
