@@ -6,7 +6,7 @@ Aplicação de **consolidação de aprendizagem baseada em Inteligência Artific
 A aplicação utiliza o conteúdo da disciplina de **Cálculo I** como contexto para avaliar a compreensão do aluno após uma aula, identificar objetivos de conhecimento dominados ou que necessitam de revisão e gerar recomendações personalizadas de aprendizagem.
 
 ---
-![Descrição da imagem](Captura de tela 2026-08-17 202050.png)
+![](Captura de tela 2026-08-17 202050.png)
 ## 🎯 Desafio proposto
 ![Descrição da imagem](Captura de tela 2026-08-17 202130.png) 
 O desafio consiste em utilizar uma aula de Cálculo I fornecida pela Cruzeiro do Sul como contexto para desenvolver pelo menos um dos seguintes casos:
@@ -377,8 +377,6 @@ Configure a variável:
 GEMINI_API_KEY
 ```
 
-A chave deve ser mantida como variável de ambiente/Secret e **não deve ser enviada para o GitHub**.
-
 Execute o backend a partir do diretório:
 
 ```bash
@@ -389,6 +387,37 @@ artifacts/case-cruzeiro-do-sul
 python backend/main.py
 ```
 
+Rode: 
+pnpm --filter @workspace/api-server run dev — run the API server (port 5000)
+pnpm run typecheck — full typecheck across all packages
+pnpm run build — typecheck + build all packages
+pnpm --filter @workspace/api-spec run codegen — regenerate API hooks and Zod schemas from the OpenAPI spec
+pnpm --filter @workspace/db run push — push DB schema changes (dev only)
+Required env: DATABASE_URL — Postgres connection string
+Stack
+pnpm workspaces, Node.js 24, TypeScript 5.9
+API: Express 5
+DB: PostgreSQL + Drizzle ORM
+Validation: Zod (zod/v4), drizzle-zod
+API codegen: Orval (from OpenAPI spec)
+Build: esbuild (CJS bundle)
+Where things live
+Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc.
+
+Architecture decisions
+Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets).
+
+Product
+Describe the high-level user-facing capabilities of this app once they exist.
+
+User preferences
+Populate as you build — explicit user instructions worth remembering across sessions.
+
+Gotchas
+Populate as you build — sharp edges, "always run X before Y" rules.
+
+Pointers
+See the pnpm-workspace skill for workspace structure, TypeScript setup, and package details
 ---
 
 # 🔌 Principais endpoints
